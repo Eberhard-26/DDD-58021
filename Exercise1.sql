@@ -1,0 +1,15 @@
+CREATE TABLE `exercise1`.`emp_1` (
+  EMP_NUM CHAR(3), 
+  EMP_Lname VARCHAR(15), 
+  EMP_FNAME VARCHAR(15), 
+  EMP_INITIAL CHAR(1), 
+  EMP_HIREDATE DATE, 
+  JOB_CODE CHAR(3),
+  PRIMARY KEY (`EMP_NUM`));
+  
+INSERT INTO `exercise1`.`emp_1` (`EMP_NUM`, `EMP_Lname`, `EMP_FNAME`, `EMP_INITIAL`, `EMP_HIREDATE`, `JOB_CODE`) 
+VALUES ('1', 'SMITH', 'Louis', 'S', '2002-08-26', '501');
+INSERT INTO `exercise1`.`emp_1` (`EMP_NUM`, `EMP_Lname`, `EMP_FNAME`, `EMP_INITIAL`, `EMP_HIREDATE`, `JOB_CODE`) 
+VALUES ('2', 'HERZ', 'Lewis', 'R', '2000-04-13', '502');
+
+SELECT * FROM exercise1.emp_1 WHERE JOB_CODE = 502;
